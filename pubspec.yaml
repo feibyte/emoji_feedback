@@ -1,11 +1,11 @@
 name: emoji_feedback
 description: An mood feedback component which could be used for rating the user's mood.
-version: 0.0.1
+version: 0.1.0
 author: fedeoo <fedeoo.zf@gmail.com>
 homepage: https://github.com/fedeoo/emoji_feedback/
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.0.0 <3.0.0"
 
 dependencies:
   flutter:

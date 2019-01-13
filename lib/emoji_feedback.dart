@@ -116,7 +116,10 @@ class EmojiFeedbackState extends State<EmojiFeedback>
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage(reactions[i].activeSrc),
+                  image: AssetImage(
+                    reactions[i].activeSrc,
+                    package: 'emoji_feedback',
+                  ),
                 ),
                 borderRadius: BorderRadius.circular(ActiveEmojiSize),
               ),
@@ -203,7 +206,7 @@ class _EmojiButton extends StatelessWidget {
                 height: EmojiSize,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage(src),
+                    image: AssetImage(src, package: 'emoji_feedback'),
                   ),
                   borderRadius: BorderRadius.circular(EmojiSize),
                 ),
